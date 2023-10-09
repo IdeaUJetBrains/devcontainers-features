@@ -1,25 +1,18 @@
 {
-  "name": "Hello output",
-  "id": "ophello2",
-  "version": "1.0.0",
-  "description": "A feature to print Hello",
+  "name": "My Favorite Color",
+  "id": "color",
+  "version": "1.0.3",
+  "description": "A feature to remind you of your favorite color",
   "options": {
-    "output1": {
+    "favorite": {
       "type": "string",
       "enum": [
-        "ophello2-1",
-        "ophello2-2",
-        "ophello2-3"
+        "red",
+        "gold",
+        "green"
       ],
-      "default": "Hello world, output1",
-      "description": "Enter the string to print, output1 "
-
-    },
-    "output2": {
-      "type": "string",
-      "proposals": ["ophello2-4", "ophello2-5"],
-      "default": "Hello world, output2",
-      "description": "Enter the string to print, output2"
+      "default": "red",
+      "description": "Choose your favorite color."
     }
   },
 
@@ -52,7 +45,7 @@
   "mounts": [{ "source": "my-hello", "target": "/ophello2", "type": "volume" }],
 
   "installsAfter": [
-    "ghcr.io/devcontainers/features/common-utils", "ghcr.io/devcontainers/features/go"
+    "ghcr.io/devcontainers/features/common-utils"
   ]
 
 

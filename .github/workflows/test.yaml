@@ -13,8 +13,8 @@ jobs:
     strategy:
       matrix:
         features:
-          - ophello2
-          - ophello3
+          - color
+          - hello
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -34,8 +34,8 @@ jobs:
     strategy:
       matrix:
         features:
-          - ophello2
-          - ophello3
+          - color
+          - hello
     steps:
       - uses: actions/checkout@v3
 

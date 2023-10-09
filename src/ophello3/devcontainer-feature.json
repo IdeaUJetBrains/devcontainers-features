@@ -1,25 +1,19 @@
 {
-    "name": "Hello output",
-    "id": "ophello3",
-    "version": "1.0.0",
-    "description": "A feature to print Hello",
+    "name": "Hello, World!",
+    "id": "hello",
+    "version": "1.0.2",
+    "description": "A hello world feature",
     "options": {
-        "output1": {
+        "greeting": {
             "type": "string",
-            "enum": [
-                "ophello3-1",
-                "ophello3-2",
-                "ophello3-3"
+            "proposals": [
+                "hey",
+                "hello",
+                "hi",
+                "howdy"
             ],
-            "default": "Hello world, output1",
-            "description": "Enter the string to print, output1 "
-
-        },
-        "output2": {
-            "type": "string",
-            "proposals": ["ophello3-4", "ophello3-5"],
-            "default": "Hello world, output2",
-            "description": "Enter the string to print, output2"
+            "default": "hey",
+            "description": "Select a pre-made greeting, or enter your own"
         }
     },
 
@@ -52,7 +46,7 @@
     "mounts": [{ "source": "my-hello", "target": "/ophello3", "type": "volume" }],
 
     "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils", "ghcr.io/devcontainers/features/go"
+        "ghcr.io/devcontainers/features/common-utils"
     ]
 
 
