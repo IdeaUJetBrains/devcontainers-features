@@ -1,7 +1,7 @@
 {
   "name": "My Favorite Color",
   "id": "color",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "A feature to remind you of your favorite color",
   "options": {
     "favorite": {
@@ -19,7 +19,7 @@
 
   "documentationURL": "https://containers.dev/implementors/features/",
   "licenseURL": "https://containers.dev/implementors/features/",
-  "keywords": ["ophello"],
+  "keywords": ["color"],
 
   "containerEnv": {
     "featurecontenv1": "featurecontenv1_value",
@@ -42,7 +42,7 @@
 
   "legacyIds":  ["op1", "op2", "op3"],
   "deprecated": false,
-  "mounts": [{ "source": "my-hello", "target": "/ophello2", "type": "volume" }],
+  "mounts": [{ "source": "colour", "target": "/colour", "type": "volume" }],
 
   "installsAfter": [
     "ghcr.io/devcontainers/features/common-utils"

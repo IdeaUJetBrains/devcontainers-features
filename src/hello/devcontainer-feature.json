@@ -20,7 +20,7 @@
 
     "documentationURL": "https://containers.dev/implementors/features/",
     "licenseURL": "https://containers.dev/implementors/features/",
-    "keywords": ["ophello"],
+    "keywords": ["hello"],
 
     "containerEnv": {
         "featurecontenv1": "featurecontenv1_value",
@@ -43,7 +43,7 @@
 
     "legacyIds":  ["op1", "op2", "op3"],
     "deprecated": false,
-    "mounts": [{ "source": "my-hello", "target": "/ophello3", "type": "volume" }],
+    "mounts": [{ "source": "hello", "target": "/hello", "type": "volume" }],
 
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"

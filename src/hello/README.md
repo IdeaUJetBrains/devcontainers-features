@@ -7,7 +7,7 @@ A hello world feature
 
 ```json
 "features": {
-    "IdeaUJetBrains/devcontainers-features/ophello3:1.0.0": {
+    "IdeaUJetBrains/devcontainers-features/hello:1.0.0": {
         "version": "latest"
     }
 }
