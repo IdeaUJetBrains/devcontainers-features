@@ -1,21 +1,59 @@
 {
-    "name": "My Favorite Color",
-    "id": "color",
-    "version": "1.0.3",
-    "description": "A feature to remind you of your favorite color",
+    "name": "Hello output",
+    "id": "ophello3",
+    "version": "1.0.0",
+    "description": "A feature to print Hello",
     "options": {
-        "favorite": {
+        "output1": {
             "type": "string",
             "enum": [
-                "red",
-                "gold",
-                "green"
+                "ophello3-1",
+                "ophello3-2",
+                "ophello3-3"
             ],
-            "default": "red",
-            "description": "Choose your favorite color."
+            "default": "Hello world, output1",
+            "description": "Enter the string to print, output1 "
+
+        },
+        "output2": {
+            "type": "string",
+            "proposals": ["ophello3-4", "ophello3-5"],
+            "default": "Hello world, output2",
+            "description": "Enter the string to print, output2"
         }
     },
+
+
+    "documentationURL": "https://containers.dev/implementors/features/",
+    "licenseURL": "https://containers.dev/implementors/features/",
+    "keywords": ["ophello"],
+
+    "containerEnv": {
+        "featurecontenv1": "featurecontenv1_value",
+        "featurecontenv2": "featurecontenv2_value",
+        "contenv3": "featurecontenv3_value",
+        "contenv4": "featurecontenv4_value"
+
+    },
+    "privileged": true,
+    "init": true,
+    "capAdd": ["capAdd1", "capAdd2"],
+    "securityOpt": ["securityOpt1", "securityOpt2"],
+    "entrypoint": "echo test entrypoint",
+    "customizations": {
+        "customizations1": {
+            "c1": "Description of the customizations1 option1",
+            "c2": "Description of the customizations1 option2"
+        }
+    },
+
+    "legacyIds":  ["op1", "op2", "op3"],
+    "deprecated": false,
+    "mounts": [{ "source": "my-hello", "target": "/ophello3", "type": "volume" }],
+
     "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils"
+        "ghcr.io/devcontainers/features/common-utils", "ghcr.io/devcontainers/features/go"
     ]
+
+
 }
