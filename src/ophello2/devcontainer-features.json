@@ -1,0 +1,59 @@
+{
+  "name": "Hello output",
+  "id": "ophello2",
+  "version": "1.0.0",
+  "description": "A feature to print Hello",
+  "options": {
+    "output1": {
+      "type": "string",
+      "enum": [
+        "ophello2-1",
+        "ophello2-2",
+        "ophello2-3"
+      ],
+      "default": "Hello world, output1",
+      "description": "Enter the string to print, output1 "
+
+    },
+    "output2": {
+      "type": "string",
+      "proposals": ["ophello2-4", "ophello2-5"],
+      "default": "Hello world, output2",
+      "description": "Enter the string to print, output2"
+    }
+  },
+
+
+  "documentationURL": "https://containers.dev/implementors/features/",
+  "licenseURL": "https://containers.dev/implementors/features/",
+  "keywords": ["ophello"],
+
+  "containerEnv": {
+    "featurecontenv1": "featurecontenv1_value",
+    "featurecontenv2": "featurecontenv2_value",
+    "contenv3": "featurecontenv3_value",
+    "contenv4": "featurecontenv4_value"
+
+  },
+  "privileged": true,
+  "init": true,
+  "capAdd": ["capAdd1", "capAdd2"],
+  "securityOpt": ["securityOpt1", "securityOpt2"],
+  "entrypoint": "echo test entrypoint",
+  "customizations": {
+    "customizations1": {
+      "c1": "Description of the customizations1 option1",
+      "c2": "Description of the customizations1 option2"
+    }
+  },
+
+  "legacyIds":  ["op1", "op2", "op3"],
+  "deprecated": false,
+  "mounts": [{ "source": "my-hello", "target": "/ophello2", "type": "volume" }],
+
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils", "ghcr.io/devcontainers/features/go"
+  ]
+
+
+}
