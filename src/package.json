@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/IdeaUJetBrains/devcontainers-features/issues"
   },
-  "homepage": "https://github.com/IdeaUJetBrains/devcontainers-features#readme"
+  "homepage": "https://github.com/IdeaUJetBrains/devcontainers-features#readme",
+  "publishConfig": {
+    "@IdeaUJetBrains:registry": "https://npm.pkg.github.com"
+  }
 }
