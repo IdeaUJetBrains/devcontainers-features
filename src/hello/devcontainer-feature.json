@@ -20,31 +20,3 @@
         "ghcr.io/devcontainers/features/common-utils"
     ]
 }
-//    "documentationURL": "https://containers.dev/implementors/features/",
-//    "licenseURL": "https://containers.dev/implementors/features/",
-//    "keywords": ["hello"],
-//
-//    "containerEnv": {
-//        "featurecontenv1": "featurecontenv1_value",
-//        "featurecontenv2": "featurecontenv2_value",
-//        "contenv3": "featurecontenv3_value",
-//        "contenv4": "featurecontenv4_value"
-//
-//    },
-//    "privileged": true,
-//    "init": true,
-//    "capAdd": ["capAdd1", "capAdd2"],
-//    "securityOpt": ["securityOpt1", "securityOpt2"],
-//    "entrypoint": "echo test entrypoint",
-//    "customizations": {
-//        "customizations1": {
-//            "c1": "Description of the customizations1 option1",
-//            "c2": "Description of the customizations1 option2"
-//        }
-//    },
-//
-//    "legacyIds":  ["op1", "op2", "op3"],
-//    "deprecated": false,
-//    "mounts": [{ "source": "hello", "target": "/hello", "type": "volume" }],
-
-
