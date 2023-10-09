@@ -1,5 +1,5 @@
 
-# Hello, World! (ophello3)
+# Hello, World! (hello)
 
 A hello world feature
 
@@ -7,7 +7,7 @@ A hello world feature
 
 ```json
 "features": {
-    "IdeaUJetBrains/devcontainers-features/hello:1.0.0": {
+    "ghcr.io/devcontainers/feature-starter/hello:1": {
         "version": "latest"
     }
 }
