@@ -33,7 +33,6 @@
             "c2": "Description of the customizations1 option2"
         }
     },
-    "legacyIds":  ["op1", "op2", "op3"],
     "deprecated": false,
     "mounts": [{ "source": "hello", "target": "/hello", "type": "volume" }],
 
