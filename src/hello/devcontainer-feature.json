@@ -30,7 +30,7 @@
     "privileged": true,
     "init": true,
     "capAdd": ["capAdd1", "capAdd2"],
-    "securityOpt": ["securityOpt1", "securityOpt2"],
+//    "securityOpt": ["securityOpt1", "securityOpt2"],
     "entrypoint": "echo test entrypoint",
     "customizations": {
         "customizations1": {
