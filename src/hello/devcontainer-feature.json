@@ -16,11 +16,8 @@
             "description": "Select a pre-made greeting, or enter your own"
         }
     },
-
     "documentationURL": "https://containers.dev/implementors/features/",
     "licenseURL": "https://containers.dev/implementors/features/",
-    "keywords": ["hello"],
-
     "containerEnv": {
         "featurecontenv1": "featurecontenv1_value",
         "featurecontenv2": "featurecontenv2_value",
